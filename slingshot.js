@@ -11,15 +11,17 @@ class Slingshot{
         World.add(world, this.slingshot);
     }
 
+     attach(body){
+        this.slingshot.bodyA=body;
+    };
+
+    
     fly(){
         this.slingshot.bodyA=null;
     };
 
 
-    attach(body){
-        this.slingshot.bodyA=body;
-    };
-
+   
     display(){
         if(this.slingshot.bodyA){  
         var pointA = this.slingshot.bodyA.position;
